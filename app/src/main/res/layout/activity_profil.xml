@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esiea.org.app.Activities.ProfilActivity"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/listgrad">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user2"
+                android:layout_centerHorizontal="true"
+
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Last Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/imageProfile"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT Consultant"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9e9e9e"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location_on_white_24dp"
+                android:layout_toStartOf="@+id/city"
+                android:layout_marginBottom="4dp"
+                android:layout_alignBottom="@+id/city"
+                android:tint="#9e9e9e"/>
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#9e9e9e"
+                android:layout_below="@+id/job"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_below="@id/profileHeader"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ageArea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        android:id="@+id/ageLabel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/age"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/agevalue"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="20"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/competenceArea"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ageArea"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        android:id="@+id/competencesLabel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/competence"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/competence"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Java"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/contact"
+                android:background="#00c893"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold"
+                android:onClick="contact"/>
+
+        </RelativeLayout>
+
+
+    
+
+</RelativeLayout>

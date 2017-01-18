@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+<!-- Settings, should always be in the overflow -->
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        android:title="logout"
+        app:showAsAction="ifRoom"/>
+
+   <item android:id="@+id/java"
+        android:title="Java"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/cSharp"
+        android:title="C#"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/c"
+        android:title="C"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/cpp"
+        android:title="C++"
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/python"
+        android:title="Python"
+        app:showAsAction="never"/>
+</menu>

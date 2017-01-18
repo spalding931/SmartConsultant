@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Consult In</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="sign_up">Créer un compte</string>
+    <string name="name">Nom</string>
+    <string name="password">Mot de passe</string>
+    <string name="error_connection">Email ou mot de passe incorrect</string>
+    <string name="registration_success">L\'inscription a été effectué avec succès</string>
+    <string name="firstName">Prénom</string>
+    <string name="lastName">Nom</string>
+    <string name="email"> Email </string>
+    <string name="job"> Métier </string>
+    <string name="city"> Ville </string>
+    <string name="ages"> Age </string>
+    <string name="competence"> Compétence </string>
+    <string name="edit"> Modifier </string>
+    <string name="validate"> Valider </string>
+    <string name="contact"> Me contacter </string>
+    <string name="client"> Client </string>
+    <string name="consultant"> Consultant </string>
+    <string name="username"> Pseudo </string>
+    <string name="no_account">Vous n\'avez pas de compte ?</string>
+    <string name="yes"> Oui </string>
+    <string name="no"> Non </string>
+
+
+
+
+</resources>
